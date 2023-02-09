@@ -1,17 +1,15 @@
 public class Main {
+
     public static void main(String[] args) {
+        int priceTicket = 13676;
+        int bonusPerMile = 20;
 
-        // Объявляете переменные для входных данных и
-        // параметров программы: одну для хранения
-        // стоимости билета, другую для хранения количества
-        // рублей для одной бонусной мили
-
-        // Рассчитываете количество бонусных миль, используя
-        // значения заведённых переменных. Ответ сохраняете в
-        // новую переменную и выводите на экран
-
-
-
-        System.out.println("Hello world!");
+        int miles;
+        if (priceTicket < 0) {
+            System.out.println("Стоимость билета не может быть отрицательной!");
+        } else {
+            miles = priceTicket / bonusPerMile;
+            System.out.println("Начислено бонусов: " + miles);
+        }
     }
 }
